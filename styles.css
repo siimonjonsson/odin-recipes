@@ -1,0 +1,110 @@
+/* INDEX.HTML */
+
+body {
+    font-family: "poppins", "inter", sans-serif;
+    margin: 0;
+    padding: 40px;
+    background: linear-gradient(135deg, #ffcc78, #ff7eb3);
+    color: #333;
+}
+
+.header {
+    border: solid 3px #000000;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    margin-bottom: 40px;
+    background-color: hsla(0, 98%, 49%, 0.5);
+    border-radius: 20px;
+    padding: 0, 0, 0
+}
+
+.title,
+.title2 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 0 #000000;
+}
+
+
+.title {
+    color: #ffffff;
+
+}
+
+.title2 {
+    color: #ffe600;
+}
+
+.cards {
+    display: flex;
+    gap: 40px;
+    max-inline-size: 1000px;
+    margin-inline: auto;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: hsla(0, 98%, 49%, 0.5);
+    border-radius: 20px;
+    width: 300px;
+
+}
+
+
+.card img {
+    display: block;
+    max-inline-size: 100%;
+    width: 350px;
+    height: 250px;
+}
+
+.card p {
+    max-width: 100%;
+    font-size: 1.3rem;
+}
+
+.dishes {
+    font-size: 1.4rem;
+    color:#ffe600;
+    text-shadow: 2px 2px 0 #000000;
+}
+
+
+
+a {
+    color: orange;
+    font-size: 1.4rem;
+    
+}
+
+a:hover,
+a:focus-visible {
+    color: #5f9b9f;
+}
+
+/* END INDEX.HTML */
+
+
+/* NAPOLETANA.HTML */
+    
+
+.two-column-layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.two-column-layout img {
+  width: 550px;
+  height: auto;
+  display: block;
+}
+
+
+.text-content {
+    max-width: 500px;
+}
+
