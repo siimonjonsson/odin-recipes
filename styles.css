@@ -3,27 +3,33 @@
 body {
     font-family: "poppins", "inter", sans-serif;
     margin: 0;
-    padding: 40px;
     background: linear-gradient(135deg, #ffcc78, #ff7eb3);
-    color: #333;
+    color: #333
 }
 
 .header {
-    border: solid 3px #000000;
+    
     justify-content: center;
     display: flex;
     gap: 10px;
     align-items: baseline;
     margin-bottom: 40px;
-    background-color: hsla(0, 98%, 49%, 0.5);
-    border-radius: 20px;
-    padding: 0, 0, 0
+    padding: 10px;
+
+    
 }
 
 .title,
 .title2 {
     font-size: 3rem;
     text-shadow: 2px 2px 0 #000000;
+    display: inline-block;
+    padding: 4px 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    margin: 0;
+    background-color: hsla(0, 98%, 49%, 0.5);
+    box-shadow: 0 4px 20px rgba(0,0,0.3);
 }
 
 
@@ -48,7 +54,12 @@ body {
     background: hsla(0, 98%, 49%, 0.5);
     border-radius: 20px;
     width: 300px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2)
 }
 
 
@@ -62,32 +73,108 @@ body {
 .card p {
     max-width: 100%;
     font-size: 1.3rem;
+    padding: 10px 10px 10px 10px;
 }
 
 .dishes {
     font-size: 1.4rem;
-    color:#ffe600;
+    color: #ffe600;
     text-shadow: 2px 2px 0 #000000;
 }
 
 
 
-a {
-    color: orange;
-    font-size: 1.4rem;
-    
+.read-more {
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background: #ffe600;
+    border-radius: 6px;
+}
+
+.read-more:hover {
+    background: #fff176;
+}
+
+
+
+.footer {
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.footer-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+
+
+}
+
+.footer-title,
+.footer-title2 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 0 #000000;
+
+
+}
+
+.footer-title {
+    color: #ffffff;
+
+}
+
+.footer-title2 {
+    color: #ffe600;
+
+
+}
+
+.footer-paragraph {
+    margin: 0;
+    opacity: 0.9;
+    padding-top: 20px;
+
+
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin: 0;
 }
 
 a:hover,
 a:focus-visible {
-    color: #5f9b9f;
+    color: #333
 }
+
 
 /* END INDEX.HTML */
 
 
 /* NAPOLETANA.HTML */
-    
+
 
 .two-column-layout {
     display: flex;
@@ -98,13 +185,12 @@ a:focus-visible {
 }
 
 .two-column-layout img {
-  width: 550px;
-  height: auto;
-  display: block;
+    width: 550px;
+    height: auto;
+    display: block;
 }
 
 
 .text-content {
     max-width: 500px;
 }
-
