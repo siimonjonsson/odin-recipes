@@ -77,7 +77,7 @@ body {
 }
 
 .dishes {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #ffe600;
     text-shadow: 2px 2px 0 #000000;
 }
@@ -153,7 +153,7 @@ body {
 
 .footer-links a {
     text-decoration: none;
-    color: white;
+    color: #fff;
 
 
 }
@@ -175,22 +175,31 @@ a:focus-visible {
 
 /* NAPOLETANA.HTML */
 
-
-.two-column-layout {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    justify-content: center;
-
+.home-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 10px;
+    display: inline-block;
+    margin-top: 20px;
 }
 
-.two-column-layout img {
-    width: 550px;
+.picture {
+    max-inline-size: 100%;
+    width: 100%;
+    max-width: 550px;
     height: auto;
-    display: block;
+    padding-top: 0;
+}
+    
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* två lika breda columner */
+    max-width: 1500px;
+    padding-left: 50px;
+    margin-top: 0;
 }
 
 
-.text-content {
-    max-width: 500px;
-}
+
