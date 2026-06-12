@@ -54,12 +54,13 @@ body {
     background: hsla(0, 98%, 49%, 0.5);
     border-radius: 20px;
     width: 300px;
+    box-shadow: 0 4px 20px rgba(0,0,0.3);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2)
+     box-shadow: 0 4px 20px rgba(0,0,0.3);
 }
 
 
@@ -148,7 +149,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-
 }
 
 .footer-links a {
@@ -176,8 +176,9 @@ a:focus-visible {
 /* NAPOLETANA.HTML */
 
 .home-link {
+    font-size: 20px;
     text-decoration: none;
-    color: #fff;
+    color: rgba(215, 22, 22, 0.7);
     font-weight: bold;
     padding-left: 10px;
     display: inline-block;
@@ -188,8 +189,16 @@ a:focus-visible {
     max-inline-size: 100%;
     width: 100%;
     max-width: 550px;
-    height: auto;
+    height: 340px;
     padding-top: 0;
+    display: block;
+}
+
+@media (max-width: 1190px) {
+    .description {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
 }
     
 
